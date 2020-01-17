@@ -11,8 +11,8 @@ class EyeTracker:
 		# detect faces in the image and initialize the list of
 		# rectangles containing the faces and eyes
 		faceRects = self.faceCascade.detectMultiScale(image,
-			scaleFactor = 1.1, minNeighbors = 5, minSize = (30, 30),
-			flags = cv2.CASCADE_SCALE_IMAGE)
+			scaleFactor = 1.1, minNeighbors = 5,
+			minSize = (30, 30), flags = cv2.CASCADE_SCALE_IMAGE)
 		rects = []
 
 		# loop over the face bounding boxes
